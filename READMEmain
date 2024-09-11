@@ -1,0 +1,63 @@
+GPIO Driver Project for MSP430
+
+Overview
+This project contains a set of functions for GPIO operations on the MSP430 microcontroller. It demonstrates the use of GPIO initialization, pin read/write operations, and integrates these functionalities into a simple application that controls an LED based on button inputs.
+
+Author
+Author: Dr. Jannatun Naher
+Created On: Fall 2024
+Last Updated: September 2024
+Libraries and Dependencies
+The project is dependent on the following libraries:
+
+MSP430 Header Files: The code relies on the MSP430 device-specific header files for register definitions and basic functions. These are typically provided by the Texas Instruments MSP430 SDK.
+
+math.h: For the pow function used in the power calculation (Step 4).
+
+Code Functionality
+The project demonstrates the following functionalities:
+
+Basic Arithmetic Operations:
+
+Addition
+Subtraction
+Multiplication
+Division
+Modulus
+Power (using both custom and built-in functions)
+GPIO Driver Functions:
+
+gpioInitIn: Configures a GPIO pin as input with pull-up/pull-down resistors.
+gpioInitOut: Configures a GPIO pin as output.
+gpioInitStatus: Reads the status of a GPIO pin.
+gpioWrite: Writes a value (high or low) to a GPIO pin.
+LED Blinking Application:
+
+Uses the GPIO driver functions to control an LED based on button press events.
+Usage
+Integration
+To integrate this code into your project:
+
+Include the GPIO Driver Files:
+
+Add GPIO_Driver.c and GPIO_Driver.h to your project.
+Include the Header File:
+
+In your source files where you want to use GPIO functions, include the header file:
+c
+Copy code
+#include "GPIO_Driver.h"
+Call GPIO Functions:
+
+Use the provided functions to initialize, read, and write to GPIO pins as needed.
+Expected Input and Outputs
+Inputs:
+
+gpioInitIn(unsigned int Port, unsigned char Pin) - Configures a pin on a specified port as input.
+gpioInitOut(unsigned int Port, unsigned char Pin) - Configures a pin on a specified port as output.
+gpioInitStatus(unsigned int Port, unsigned char Pin) - Reads the current value of a pin.
+gpioWrite(unsigned int Port, unsigned char Pin, unsigned char value) - Sets a pin high or low.
+Outputs:
+
+LED Control: The RED_LED (P1.0) will toggle its state based on the status of BUTTON1 (P4.1).
+Arithmetic Results: Calculations such as addition, subtraction, etc., are performed, though not displayed in this example code.
