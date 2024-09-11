@@ -43,21 +43,6 @@ BUTTON2:
 
 Toggles the state of the green LED on P6.6.
 A debounce delay is also implemented for stable button handling.
-How to Use
-
-**Hardware Setup:**
-
-Connect a red LED to pin P1.0 of the MSP430 and a green LED to pin P6.6.
-Connect push buttons to pins P4.1 (BUTTON1) and P2.3 (BUTTON2).
-Ensure pull-up resistors are enabled for both buttons.
-Compilation and Upload:
-
-Use an MSP430-compatible compiler to compile the code.
-Upload the compiled code to your MSP430 microcontroller using an appropriate programmer/debugger.
-Running the Code:
-
-When BUTTON1 is pressed, the red LED will toggle its state.
-When BUTTON2 is pressed, the green LED will toggle its state.
 
 **Contact**
 For questions or issues, please contact:
