@@ -4,10 +4,11 @@ Overview
 This project contains a set of functions for GPIO operations on the MSP430 microcontroller. It demonstrates the use of GPIO initialization, pin read/write operations, and integrates these functionalities into a simple application that controls an LED based on button inputs.
 
 Author
-Author: Dr. Jannatun Naher
-Created On: Fall 2024
-Last Updated: September 2024
+Author: Ben Souder and Arturo Sanchez 
+Created On: 9/11/2024
+Last Updated: 9/11/2024
 Libraries and Dependencies
+
 The project is dependent on the following libraries:
 
 MSP430 Header Files: The code relies on the MSP430 device-specific header files for register definitions and basic functions. These are typically provided by the Texas Instruments MSP430 SDK.
